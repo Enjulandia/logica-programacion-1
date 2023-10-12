@@ -1,6 +1,6 @@
 
 //No cambiar el nombre de la función ordenarNumeros
-const prompt = require("prompt-sync")()
+//const prompt = require("prompt-sync")()
 
 function ordenarNumeros(num1, num2, num3) {
 
@@ -40,8 +40,8 @@ function ordenarNumeros(num1, num2, num3) {
     console.log("Los números son iguales.");
   }
   else {
-    console.log([mayor, centro, menor]);
-    console.log([menor, centro, mayor]);
+    console.log("mayor a menor", mayor, centro, menor);
+    console.log("menor a mayor", menor, centro, mayor);
 
   }
 
@@ -60,7 +60,7 @@ function ordenarNumeros(num1, num2, num3) {
   };
 }
 
-module.exports = ordenarNumeros;
+//module.exports = ordenarNumeros;
 
 let num1 = parseFloat(prompt("Introduce el primer número:"));
 let num2 = parseFloat(prompt("Introduce el segundo número:"));
